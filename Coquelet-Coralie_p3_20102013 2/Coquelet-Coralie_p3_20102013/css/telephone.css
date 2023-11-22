@@ -1,0 +1,221 @@
+/* téléphone 768px) */
+@media screen and (max-width: 768px) {
+
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrer les éléments horizontalement */
+    }
+
+    .logo {
+        margin: 0 auto 70px; /* Centrer le logo et ajouter l'espacement en bas */
+        width: 170px;
+    }
+
+    .divLink {
+        display: flex;
+        justify-content: space-between; /* Aligner "Hébergements" à gauche et "Activités" à droite */
+        align-items: center;
+        width: 100%; /* Pleine largeur */
+    }
+
+    .linkHead {
+        flex: 1; /* Occuper une part égale de l'espace disponible */
+        text-align: center; /* Centrer le texte */
+        margin-bottom: 10px;
+    }
+
+    .linkHead:nth-child(1) {
+        border-bottom: 2px solid #0065FC; /* Ajustez la largeur de la barre */
+        padding-left: 1px;
+        border-top: none;
+    }
+
+    /* Éléments de la section "Filtres" */
+    #titre_filtres {
+        margin-bottom: 40px;
+    }
+
+    #filtres {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 18px;
+        column-gap: 50px;
+        padding-top: 40px;
+        margin-left: 25px;
+
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    #filtres_categories {
+        display: flex;
+        margin: 5px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .aspect_filtres {
+        display: flex;
+        justify-content: center;
+        border: 3px solid #F2F2F2;
+        border-radius: 30px;
+        padding: 0 30px;
+        text-align: center;
+        text-indent: -20px;
+        transition: background-color 0.3s, color 0.3s;
+        width: calc(50% - 15px); /* Chaque bouton occupe 50% de la largeur avec un espace de 15px entre eux */
+        margin-bottom: 40px;
+
+    }
+
+    /* Section "Recherche" */
+
+
+    .hebergements-and-populaires {
+        flex-direction: column; /* Inverser la direction en colonne */
+    }
+
+    .main-container {
+        padding: 0 10px; /* Ajuster la marge intérieure pour téléphone */
+    }
+
+
+    .populaires-cards img {
+        width: 33%;
+    }
+
+    #afficher_plus a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+        right: 21px;
+    }
+
+
+    #filtres_categories {
+        display: flex;
+        margin-right: 33px;
+        box-sizing: content-box;
+    }
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements {
+        order: 2;
+        width: 100%;
+        background-color: white !important;
+    }
+
+    .card {
+        flex-direction: row;
+    }
+
+    #resultats_hebergements {
+        flex-direction: column;
+    }
+
+    .choix_hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        order: 1;
+        width: 100%;
+    }
+
+    .populaires-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #activites_ville {
+        order: 3;
+    }
+
+    .footer {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #f2f2f2;
+        padding: 0 15px;
+        box-sizing: border-box;
+        line-height: 40px;
+        gap: 40px;
+    }
+
+    .bouton_rechercher_desktop_tablette {
+        display: none; /* Masquez le bouton de recherche */
+    }
+
+    .fa-magnifying-glass-mobile {
+        display: inline-block; /* Affichez l'icône de la loupe */
+        font-size: 17px;
+        border: 2px solid #F2F2F2;
+        background-color: #0050e7;
+        padding: 15px;
+        padding-left: 18px;
+        border-radius: 0 18px 18px 0;
+        color: white;
+
+    }
+
+    /* Galerie d'hébergements */
+    .hebergements .resultats_hebergements {
+        display: flex;
+        flex-wrap: nowrap; /* Empêche le retour à la ligne des éléments */
+        overflow-x: scroll; /* Ajoute une barre de défilement horizontal si nécessaire */
+        scroll-snap-type: x mandatory; /* Active le défilement par élément */
+    }
+
+    .choix_hebergements {
+        flex: 0 0 auto; /* Les éléments n'auront pas de flexibilité en largeur */
+        scroll-snap-align: start; /* Assure que le défilement s'aligne sur les éléments */
+        margin-right: 10px; /* Marge entre les éléments */
+    }
+
+    .hebergements .hebergements_image {
+        max-width: 100%; /* Ajustez la largeur maximale pour s'adapter à l'écran du téléphone */
+        height: 60%; /* Pour conserver le rapport hauteur-largeur */
+    }
+
+    .hebergements .choix_hebergements a {
+        flex-direction: column;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    #selection_activites {
+        width: 100%; /* La largeur maximale sera de 100% de la largeur du conteneur */
+        height: auto; /* La hauteur s'ajustera automatiquement pour maintenir la proportion d'origine */
+        flex-direction: column;
+    }
+
+    /* Redimensionnez les images pour qu'elles prennent la largeur de l'écran */
+    .activite_image {
+        width: 100%;
+        height: 76%;
+    }
+
+    .tous_les_elements {
+        margin-bottom: 30px;
+        width: 100% !important;
+        height: 215px;
+    }
+
+    .titre_selection_activite {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+}
